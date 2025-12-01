@@ -4,7 +4,7 @@ Capstone Project - AI Edge '25
 
 ## Purpose
 
-- This project is a Journal Companion that will help the user in his everyday life.
+- This project is a Journal Companion that will help the user in his everyday life. Originally the thought process was directed towards reentry to society for previously incarcaerated individuals, after careful consideration we have decided that it would be benefitial to all individuals that lack a community.
 - The goal is to be able to uplift and assist with positive thinking and build with some self help guidance.
 - The Journal is meant to have a personal encounter that could help in moments of need but as well to track your everyday feelings and provide words of encouragement.
 
