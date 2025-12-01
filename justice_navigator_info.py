@@ -10,7 +10,7 @@ def my_info() -> None:
     print(f"{Fore.WHITE}{"="*64}")
     print(f"\n{Fore.GREEN}{name}")
     print(f"{Fore.CYAN}{"="*13}{proj_name}{"="*14}")
-    print(f"{Fore.YELLOW}{"*"*1}{school}{"*"*1}")
+    print(f"{Fore.YELLOW}{"*"*1}{school}{"*"*1}{Style.RESET_ALL}")
 
 my_info()
 
@@ -18,6 +18,6 @@ def show_date() -> None:
     now = datetime.now()
     readable = now.strftime("%B %d, %Y at %I:%M:%S %p")
     print(f"{Fore.WHITE}{"="*16}{readable}{"="*16}\n")
-    print(f"{Fore.WHITE}{"="*64}")
+    print(f"{Fore.WHITE}{"="*64}{Style.RESET_ALL}")
 
 show_date()
