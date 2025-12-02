@@ -45,7 +45,6 @@ Roland Carlisle             roceegithub
 - The companion will reconcile your stated mood compared to your responses.
 - The companion will provide randomn prompt to encourage journaling.
   
-
 ## Responsible AI Use
 
 - AI is a tool, not a source of truth. Users must verify outputs.
@@ -57,7 +56,7 @@ Roland Carlisle             roceegithub
 
 ## Prompt Library Link
 
--https://docs.google.com/document/d/1NbQN0IfGE-1KPqisY_vnYpuQXiinzinBp4JX-5LuXg8/edit?usp=drive_link
+- <https://docs.google.com/document/d/1NbQN0IfGE-1KPqisY_vnYpuQXiinzinBp4JX-5LuXg8/edit?usp=drive_link>
 
 ## Feature Spec
 
