@@ -9,7 +9,7 @@
 - I have added some information to the code. I have created a baseline to assist with our ideas and make changes as needed.
 - Created README.md file so we can add project based responses, reflection.md file for the team to communicate and advise of any ideas or changes they are interested in implementing.
 
-- @DeAnna thank you for the note I will make the changes and refresh.
+- @DeAnna thank you for the note I will make the changes and refresh. So I don't mess this up, the file name journal_companion.py should be src/app.py. rules.py should match to which command?
 
 ## DeAnna
 
@@ -18,7 +18,7 @@
 - Created a Google docs that is accessible by the entire team.
 - I have updated the README with the other required sections: Team members, Responsible AI, User Instructions and placeholders for Prompt Library (Roland) and Featured Spec (currently assignned to MW but I will assist as needed)
   
- @Miquel assignment W9D1 states we have to use the specific file names src/app.py and rules.py. We currently have it listed as python journal_companion.py
+ @Miguel assignment W9D1 states we have to use the specific file names src/app.py and rules.py. We currently have it listed as python journal_companion.py
 
 ## Roland
 
