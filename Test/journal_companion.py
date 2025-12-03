@@ -6,7 +6,8 @@ import datetime
 from colorama import init, Fore, Back, Style      # type: ignore   
 import colorama                                   # type: ignore
 
-autoreset=True
+# auto reset to bring codes back to original coloring
+autoreset=True                                    
 
 def welcome_message():
     """introduction to journal"""
@@ -50,7 +51,7 @@ def daily_reflection(name):
     print(f"Current Time: {current_time}")
 
     # need to evaluate the daily questions with team, these are possible examples
-    questions = [
+    daily_questions = [
         "What's a positive thing that happened today?",
         "What made the day challenging, and how did you handle it?",
         "Did you connect with anyone today, how was that experience?",
@@ -63,17 +64,17 @@ def daily_reflection(name):
     # blank space for response
     answers = []
 
-    for e, question in enumerate(questions, 1):
+    for e, question in enumerate(daily_questions, 1):
         print(f"\n{e}. {question}")
         answer = input("Let me hear your thoughts: ")
         answers.append(answer)
 
         # user control to skip questions
-        if e < len(questions):
+        if e < len(daily_questions):
             skip = input("\nPress ENTER to continue or type 'SKIP' to finish: ")
-            if skip.lower() == 'SKIP':
+            if skip.lower() == 'skip':
                 # if SKIP, fill in the rest of the questions with "Skipped"
-                for s in range(e, len(questions)):
+                for s in range(e, len(daily_questions)):
                     answers.append("Skipped")
                 break
 
@@ -81,9 +82,9 @@ def daily_reflection(name):
 
 def weekly_check_in(name):
     """Weekly checkin with deeper questions"""
-    print("\n{name}, let's check-in...")
+    print(f"\n{name}, let's check-in...")
 
-    questions = [
+    weekly_questions = [
         "What do you feel was your biggest accomplishment this week? ",
         "What do you feel was the most challenging this week? ",
         "What support do you need right now? ",
@@ -94,10 +95,19 @@ def weekly_check_in(name):
     answers = []
     current_date = datetime.datetime.now().strftime("%m/%d/%Y")
 
-    for question in questions:
-        print("\n{question}")
+    for e, question in enumerate(weekly_questions, 1):
+        print(f"\n{e}. {question}")
         answer = input("Your response: ")
         answers.append(answer)
+
+        # user control to skip questions
+        if e < len(weekly_questions):
+            skip = input("\nPress ENTER to continue or type 'SKIP' to finish: ")
+            if skip.lower() == 'skip':
+                # if SKIP, fill in the rest of the questions with "Skipped"
+                for s in range(e, len(weekly_questions)):
+                    answers.append("Skipped")
+                break
 
     return current_date, answers
 
@@ -123,7 +133,7 @@ def save_entry(entry_type, date, time, content, name):
             ]
 
             for e, (question, answer) in enumerate(zip(questions, content)):
-                file.write(f"{question}{answer}\n")
+                file.write(f"{e}. {question}{answer}\n")
 
         elif entry_type == "Weekly Check-in":
             questions = [
@@ -135,9 +145,9 @@ def save_entry(entry_type, date, time, content, name):
             ]
 
             for e, (question, answer) in enumerate(zip(questions, content)):
-                file.write(f"{question}{answer}\n")
+                file.write(f"{e}. {question}{answer}\n")
 
-    print(f"\n{Fore.GREEN} √ Your entry has been saved to {filename}")
+    print(f"\n{Fore.GREEN} √ Your entry has been saved to {filename}{Style.RESET_ALL}")
 
 def view_previous_entries(name):
     """Review previous journal entries"""
@@ -148,7 +158,7 @@ def view_previous_entries(name):
         with open(filename, "r") as file:
             print(file.read())
     else:
-        print(f"\n Unfortunately you have not saved a file yet. Your Journal is ready to listen when you are ready to say.")
+        print(f"\nUnfortunately you have not saved a file yet. Your Journal is ready to listen when you are ready to say.")
 
 def main():
 
@@ -171,7 +181,7 @@ def main():
         print(f"1) Daily Reflection")
         print(f"2) Weekly Check-in")
         print(f"3) View Previous Entries")
-        print(f"4) Exit")
+        print(f"4) Exit{Style.RESET_ALL}")
 
         choice = input("\n Please select (1-4): ")
 
