@@ -4,11 +4,12 @@ Capstone Project - AI Edge '25
 
 ## Team Members
 
-Name                        GitHub Handle
-Miguel Pena                 mneyp1216
-DeAnna Hoskins              deannarhoskins
-Michael Washington          michaeljwashington1111
-Roland Carlisle             roceegithub
+Name                    GitHub Handle
+
+- Miguel Pena           - [@mneyp1216](https://github.com/mneyp1216)
+- DeAnna Hoskins        - [@deannarhoskins](https://github.com/deannarhoskins)
+- Michael Washington    - [@michaeljwashington1111](https://github.com/michaeljwashington1111)
+- Roland Carlisle       - [@roceegithub](https://github.com/roceegithub)
 
 ## Purpose
 
