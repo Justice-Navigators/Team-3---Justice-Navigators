@@ -75,18 +75,16 @@ When I select a valid mood, I receive one journaling prompt.
 If I enter something invalid, I receive a safe, default reflection.
 The prompt must follow tone, safety, and system instructions.
 
-
 ## Test Plan
 
 Input “high” - Returns high-energy prompt.
 Input “low” - Returns grounding prompt.
 Input “banana” - Returns safe default prompt.
 
+## Input
 
-## Input 
 -user inputs: name, journal option (daily, weekly, etc.), 
 
 ## Output
+
 -motivation quote + journal prompt
-
-
