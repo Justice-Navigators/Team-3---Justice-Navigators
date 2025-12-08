@@ -93,7 +93,8 @@ Input “banana” - Returns safe default prompt.
 
 ### Decision Table Implementation
 #### Input Rules and Valid Values
-The Journal Companion uses structured decision table with 4 valid rules and 1 default rule. Each rule had multiple input variables for user convenience.
+
+- The Journal Companion uses structured decision table with 4 valid rules and 1 default rule. Each rule had multiple input variables for user convenience.
 =========================================================================================================
 Rule#   |   Menu Option        |Valid Input Values    | Description                                     |
 =========================================================================================================
@@ -105,7 +106,8 @@ Default |   Invalid Input      |Any other value       | Shows error message and 
 =========================================================================================================
 
 #### Mood Assessment Scale Inputs
-the mood assessment system accpts both number values(1-5) and descriptive keywords:
+
+- The mood assessment system accpts both number values(1-5) and descriptive keywords:
 =======================================================================================================
 Level | Numeric  |  Keywords                                |   Description                           |
 =======================================================================================================
