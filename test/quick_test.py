@@ -2,7 +2,7 @@
 """
 Quick interactive test for rules.py
 """
-
+import unittest
 from src.rules import validate_choice
 
 def quick_test():

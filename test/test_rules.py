@@ -19,7 +19,7 @@
 """
 Test script for rules.py validation
 """
-
+import unittest
 import sys
 import os
 

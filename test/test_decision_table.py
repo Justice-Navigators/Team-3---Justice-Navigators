@@ -1,5 +1,6 @@
 # test_decision_table.py
 
+import unittest
 from src.decision_table import decision_table
 
 def test_decision_table():
